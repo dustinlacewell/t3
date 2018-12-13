@@ -64,7 +64,7 @@ t3 is a cli tool with two major features:
 - Generates TADS3 source-code from Trizbort XML maps.
 
 
-This is a rewrite of an older project [t3sketch](https://github.com/dustinlacewell/t3sketch)
+This is a rewrite of an older project `t3sketch<https://github.com/dustinlacewell/t3sketch>`_.
 
 
 **Makefile Generation**
@@ -76,7 +76,7 @@ makefile. t3 can also build and clean the project as well.
 
 **Source-code Generation**
 
-[Trizbort](http://www.trizbort.com/) is a GUI app where you can draw IF worlds
+`Trizbort<http://www.trizbort.com/>` is a GUI app where you can draw IF worlds
 and generate the corresponding code. However the support for Inform and other
 systems is much more sophisticated than it is for TADS3. Unlike Trizbort which
 is C#, t3 uses Python and Jinja2 templates to perform this code
