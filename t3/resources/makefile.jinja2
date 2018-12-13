@@ -1,0 +1,40 @@
+# {{ game_name }}
+# {{ game_author }}
+# {{ game_desc }}
+
+{% if debug_mode -%}
+    -d
+{%- endif %}
+
+-D "LANGUAGE=en_us"
+-D "MESSAGESTYLE=neu"
+{% if html -%}
+    -D TADS_INCLUDE_NET
+{%- endif %}
+
+-FC
+-Fy "{{obj_path}}"
+-Fo "{{obj_path}}"
+
+# image file
+-o {{img_file}}
+
+-v
+-statprefix <@>
+-statpct
+
+-I tads3lib
+
+-lib system
+{% if html -%}
+    -lib webui
+    -source tadsnet
+    -lib adv3/adv3web
+{%- else -%}
+    -lib adv3/adv3
+{%- endif %}
+
+# source files
+{% for file in sources -%}
+    -source {{ file }}
+{%- endfor %}
