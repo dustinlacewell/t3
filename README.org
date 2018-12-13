@@ -57,14 +57,14 @@ t3 is a cli tool with two major features:
 This is a rewrite of an older project [[https://github.com/dustinlacewell/t3sketch][t3sketch]].
 
 
-**Makefile Generation**
+=Makefile Generation=
 
 TADS3 makefiles are not the worst thing to work with but I found that each time
 I wanted to start a new TADS3 experiment I had to digest it all again. t3
 solves this by inspecting your source code and generating a reasonable
 makefile. t3 can also build and clean the project as well.
 
-**Source-code Generation**
+=Source-code Generation=
 
 [[http://www.trizbort.com/][Trizbort]] is a GUI app where you can draw IF worlds and generate the
 corresponding code. However the support for Inform and other systems is much
